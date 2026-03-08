@@ -1,0 +1,25 @@
+{
+  "name": "html-to-figma",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"vite build --watch\" \"vite build --mode plugin --watch\"",
+    "build": "vite build && vite build --mode plugin",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.101.0",
+    "@types/node": "^25.3.3",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "concurrently": "^8.2.2",
+    "typescript": "^5.5.3",
+    "vite": "^4.5.3",
+    "vite-plugin-singlefile": "^0.13.5"
+  }
+}
